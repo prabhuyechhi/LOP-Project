@@ -1,0 +1,115 @@
+16)
+1. Install Git in your local machine.
+
+2. Configure Git:
+ 
+git config --global "Name"
+git config --global "Email"
+
+3. Create a repository:
+
+mkdir my_project 
+cd my_project 
+
+4. Initialize the Git:
+
+git init
+
+5. Clone the Repository 
+
+git clone https://github.com/prabha/repository.git
+
+6. Add Files and Make Initial Commit:
+
+git add .
+
+git commit -m "Initial commit"
+
+7. Push Initial Commit to Remote Repository:
+
+git push -u origin master
+
+8. Create and Switch to a New Branch:
+
+git checkout -b my_feature_branch
+
+9. Sync with Remote Repository:
+
+git pull origin master
+ 
+
+
+17)
+1. Commit My Changes:
+ 
+git add .
+git commit -m "Implemented new feature XYZ"
+ 
+2. Push Your Branch to Remote Repository.
+ 
+git push origin new-feature-branch
+ 
+3. Create a Pull Request and Assign Reviewers.
+ 
+4. Merge Pull Request.
+
+
+
+18)
+1. Commit Your Changes:
+git add .
+git commit -m "Commit Message"
+ 
+2. Check Remote Configuration:
+git remote -v
+ 
+3. Push Changes to Remote Repository:
+git push origin your-branch-name
+
+
+
+19)
+1. Start from the develop Branch:
+git checkout develop
+ 
+2. Create a Release Branch
+git checkout -b release
+ 
+3. Merge into the master Branch
+git checkout master
+git merge --no-ff release
+ 
+4. Tag the Release:
+git tag -a release -m "Release changes"
+ 
+5. Merge into develop Branch:
+git checkout develop
+git merge --no-ff release
+ 
+6. Push Changes:
+git push origin master
+git push origin --tags
+ 
+7. Delete the Release Branch:
+git branch -d release
+git push origin --delete release
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
